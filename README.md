@@ -21,7 +21,7 @@ These versions are managed by Spring Boot.
 # Build System Choice
 This project has two folders, `maven` and `gradle` for the respective build systems. The code (located in `src`) is the same for both build systems. The only difference is the build system itself. The `maven` folder contains a `pom.xml` file and the `gradle` folder contains a `build.gradle` file. You can use either one to build the project.
 
-Notes are below on the specific changes required for each build system.
+Notes are below on the specific changes required for each build system. These changes have already been made in the `pom.xml` and `build.gradle` files in the respective folders. You can use these files as a reference for your own project.
 
 ___
 
@@ -141,8 +141,6 @@ org.springframework:spring-context:5.3.39-spring-framework-5.3.41-trial
 org.springframework.boot:spring-boot-starter-jdbc:2.7.18-spring-boot-2.7.20-trial
 ```
 
-Congratulations! Your Spring Gradle project is ready to be secure. [Contact HeroDevs](https://www.herodevs.com/contact) for a registry token to get full access. Simply change the `herodevs_nes_registry_token` field in `gradle.properties` to your specific token and the next build will use NES for Spring dependencies with zero CVEs.
-
 ___
 
 # Running the Application
@@ -175,3 +173,7 @@ You should see the following output:
 ```
 [{"name":"Buddy","type":"Dog"}]
 ```
+
+# Next Steps
+
+Congratulations! Your Spring project is ready to be secure. [Contact HeroDevs](https://www.herodevs.com/contact) for a registry token to get full access. Simply change the `herodevs_nes_registry_token` field in `gradle.properties` or the `password` in `settings.xml` to your specific token and the next build will use NES for Spring dependencies with zero CVEs.
